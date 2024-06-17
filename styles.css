@@ -41,3 +41,81 @@ i {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
+.sideNavigation .chatHistory {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.sideNavigation .chatHistory::-webkit-scrollbar {
+  display: none;
+}
+
+.sideNavigation .chatHistory h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin: 15px 5px;
+}
+
+.sideNavigation .chatHistory li {
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  width: 225px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sideNavigation .chatHistory i {
+  padding-right: 10px;
+}
+
+.sideNavigation .chatHistory li:hover,
+.sideNavigation .actionList button:hover {
+  background: #dde3ea;
+}
+
+.sideNavigation .sideNavButton button {
+  height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: #dde3ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sideNavigation .actionList {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 15px;
+}
+
+.sideNavigation .actionList button {
+  margin: 1px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  width: 230px;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.sideNavigation .actionList button .collapseText {
+  padding: 0 10px;
+}
