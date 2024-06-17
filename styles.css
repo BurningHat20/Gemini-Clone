@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #fff;
+  height: 100vh;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sideNavigation {
+  width: 350px;
+  height: 100%;
+  padding: 1rem;
+  background-color: #f0f4f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.sideNavigation .topBarAction {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.sideNavigation .topBarAction i {
+  font-size: 18px;
+}
+
+.sideNavigation .sideNavButton {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
