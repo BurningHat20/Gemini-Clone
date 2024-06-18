@@ -58,6 +58,18 @@ i {
   font-size: 1rem;
 }
 
+.sideNavigation.expandClose .sideNavButton button,
+.sideNavigation.expandClose .actionList button {
+  width: 45px;
+  text-align: center;
+}
+
+.sideNavigation.expandClose .collapseText,
+.sideNavigation.expandClose .chatHistory,
+.chatWindow .chatContent {
+  display: none;
+}
+
 .sideNavigation .chatHistory {
   max-height: 250px;
   overflow-y: scroll;
@@ -86,6 +98,10 @@ i {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.sideNavigation.expandClose {
+  width: 68px;
 }
 
 .sideNavigation .chatHistory i {

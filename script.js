@@ -39,3 +39,7 @@ window.addEventListener("load", () => {
     startContentUl.append(item);
   });
 });
+
+sideBarToggle.addEventListener("click", () => {
+  sideNavigation.classList.toggle("expandClose");
+});
