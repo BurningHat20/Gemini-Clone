@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemini-Clone</title>
+    <title>Gemini AI</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -14,63 +14,86 @@
     <div class="container">
       <div class="sideNavigation">
         <div class="topBarAction">
-          <i class="ri-side-bar-line"></i>
+          <i class="ri-menu-line"></i>
         </div>
         <div class="sideNavButton">
           <button>
-            <i class="ri-add-circle-line"></i
-            ><span class="collapseText">New Chat</span>
+            <i class="ri-add-line"></i>
+            <span class="collapseText">New Chat</span>
           </button>
         </div>
-
         <div class="chatHistory">
-          <h5>Recent</h5>
-          <ul></ul>
+          <h5>Recent Chats</h5>
+          <ul>
+            <!-- Recent chat items dynamically added here -->
+          </ul>
         </div>
-
         <div class="actionList">
-          <button class="transperant Button">
-            <i class="ri-question-line"></i
-            ><span class="collapseText">Help</span>
+          <button class="transparentButton">
+            <i class="ri-question-line"></i>
+            <span class="collapseText">Help</span>
           </button>
-
-          <button class="transperantButton">
-            <i class="ri-history-line"></i
-            ><span class="collapseText">Activity</span>
+          <button class="transparentButton">
+            <i class="ri-history-line"></i>
+            <span class="collapseText">Activity</span>
           </button>
-
-          <button class="transperantButton">
-            <i class="ri-settings-3-line"></i
-            ><span class="collapseText">Settings</span>
+          <button class="transparentButton">
+            <i class="ri-settings-3-line"></i>
+            <span class="collapseText">Settings</span>
           </button>
         </div>
       </div>
 
       <div class="chatWindow">
-        <div class="startContent">
-          <h1>
-            <span class="brandHello">Hello Yash Gohel</span>
-            <br />
-            <span class="brandQuestion">How can I help You Today</span>
-          </h1>
-          <br />
-          <ul></ul>
-          <!-- <div class="chatContent">
-            <div class="results"></div>
-          </div> -->
-          <div class="inputArea">
-            <input type="text" placeholder="Enter your prompt here" />
-            <div class="iconGroup">
-              <i class="ri-image-line"></i>
-              <i class="ri-mic-2-line"></i>
-              <i class="ri-send-plane-line"></i>
-            </div>
-            <p class="privacyPolicy">
-              Gemini may display inaccurate info, including about people, so
-              double-check its responses. Your privacy & Gemini Apps
-            </p>
+        <div class="topBar">
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+              <path
+                d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+              />
+            </svg>
+            <span>Gemini</span>
+          </div>
+          <div class="actions">
+            <button><i class="ri-star-line"></i></button>
+            <button><i class="ri-share-line"></i></button>
           </div>
         </div>
+        <div class="startContent">
+          <h1>
+            <span class="brandHello">Hello Yash</span>
+            <br />
+            <span class="brandQuestion">How can I help you today?</span>
+          </h1>
+          <div class="suggestionGrid">
+            <!-- Suggested actions dynamically added here -->
+          </div>
+        </div>
+        <div class="chatContent">
+          <div class="results"></div>
+          <!-- Chat history/results dynamically added here -->
+        </div>
+        <div class="inputArea">
+          <input type="text" placeholder="Enter a prompt here" />
+          <div class="iconGroup">
+            <i class="ri-image-line"></i>
+            <i class="ri-mic-line"></i>
+            <i class="ri-send-plane-fill"></i>
+          </div>
+        </div>
+        <p class="privacyPolicy">
+          Gemini may display inaccurate info, including about people, so
+          double-check its responses. <a href="#">Your privacy</a> &
+          <a href="#">Gemini Apps</a>
+        </p>
       </div>
     </div>
     <script src="script.js"></script>
