@@ -1,2 +1,9 @@
-const sideNavigation = document.querySelector(".sideNavigation");
-console.log(sideNavigation);
+const sideNavigation = document.querySelector(".sideNavigation"),
+  sideBarToggle = document.querySelector(".ri-side-bar-line"),
+  startContentUl = document.querySelector("..startContent ul"),
+  inputArea = document.querySelector(".inputArea input"),
+  sendRequest = document.querySelector(".ri-send-plane-line"),
+  chatHistory = document.querySelector("..chatHistory ul"),
+  startContent = document.querySelector(".startContent"),
+  chatContent = document.querySelector(".chatContent"),
+  results = document.querySelector(".results");
