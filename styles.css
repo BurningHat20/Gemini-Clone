@@ -194,6 +194,26 @@ i {
   background: #dde3ea;
 }
 
+.chatWindow .startContent .promptSuggetion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 150px;
+}
+.chatWindow .startContent .promptSuggetion p {
+  margin: 1rem;
+}
+.chatWindow .startContent .promptSuggetion .icon {
+  text-align: end;
+  margin-bottom: 10px;
+}
+
+.chatWindow .startContent .promptSuggetion i {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+
 .inputArea {
   position: fixed;
   bottom: 60px; /* Raised to avoid overlap with privacy policy */
